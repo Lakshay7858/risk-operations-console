@@ -12,3 +12,4 @@
 - Improved error handling for malformed input (2026-01-26)
 - Updated scoring algorithm weights (2026-02-03)
 - Added support for new data format (2026-02-03)
+- Optimized batch processing performance (2026-02-04)
