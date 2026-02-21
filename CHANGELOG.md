@@ -18,3 +18,4 @@
 - Improved logging and monitoring (2026-02-12)
 - Fixed Unicode handling for AZ/RU text (2026-02-16)
 - Updated API response format (2026-02-18)
+- Added rate limiting (2026-02-21)
