@@ -22,3 +22,4 @@
 - Fixed concurrent access issue (2026-02-21)
 - Improved test coverage (2026-02-24)
 - Added data export functionality (2026-02-25)
+- Fixed date parsing edge cases (2026-02-26)
