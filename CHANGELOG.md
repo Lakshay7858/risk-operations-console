@@ -1,25 +1,11 @@
 # Changelog
 
-- Improved logging and monitoring (2026-01-01)
-- Fixed Unicode handling for AZ/RU text (2026-01-05)
-- Updated API response format (2026-01-05)
-- Added rate limiting (2026-01-08)
-- Fixed concurrent access issue (2026-01-14)
-- Improved test coverage (2026-01-21)
-- Added data export functionality (2026-01-21)
-- Fixed date parsing edge cases (2026-01-24)
-- Fixed edge case in data validation (2026-01-26)
-- Improved error handling for malformed input (2026-01-26)
-- Updated scoring algorithm weights (2026-02-03)
-- Added support for new data format (2026-02-03)
-- Optimized batch processing performance (2026-02-04)
-- Fixed memory leak in processor (2026-02-10)
-- Added new configuration options (2026-02-10)
-- Improved logging and monitoring (2026-02-12)
-- Fixed Unicode handling for AZ/RU text (2026-02-16)
-- Updated API response format (2026-02-18)
-- Added rate limiting (2026-02-21)
-- Fixed concurrent access issue (2026-02-21)
-- Improved test coverage (2026-02-24)
-- Added data export functionality (2026-02-25)
-- Fixed date parsing edge cases (2026-02-26)
+## [1.0.0] - 2026-01-15
+### Added
+- Initial release: FastAPI backend + React frontend
+- Trade volume trend charts with configurable time windows
+- Risk distribution heatmap (country x HS chapter)
+- Top importers/exporters ranked table
+- Anomaly timeline with severity indicators
+- Docker Compose deployment (backend + frontend + PostgreSQL + Redis)
+- JWT authentication
